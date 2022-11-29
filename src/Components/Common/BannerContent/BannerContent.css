@@ -1,0 +1,25 @@
+.banner-wrapper {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.banner-wrapper a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.banner-bg {
+    background-image: url('https://cdn.dynamicyield.com/api/8770101/images/1dadc1eef3b3c__desktop_2000x700_falloutfitting.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: .95;
+    transition: opacity 0.24s ease 0s;
+    z-index: -1;
+}

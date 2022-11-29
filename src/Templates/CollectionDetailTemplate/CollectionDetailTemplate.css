@@ -1,0 +1,130 @@
+.collection-template {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.collection-wrapper {
+    display: flex;
+}
+
+.collection-nav {
+    display: none;
+    width: 100vw;
+    background-color: #E6E8EB;
+    height: 60px;
+    line-height: 60px;
+}
+
+.collection-sidebar {
+    position: relative;
+    width: 20%;
+}
+
+.main-collection {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.collection-title {
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.product-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 50%;
+    min-height: 800px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pt-loading {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+}
+
+.toolbar {
+    display: none;
+}
+
+.filter-overlay {
+    display: none;
+}
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .collection-wrapper {
+        display: block;
+    }
+
+    .collection-title {
+        display: none;
+    }
+
+    .collection-sidebar {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .main-collection {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .toolbar {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .collection-mb-title {
+        font-size: 32px;
+        font-weight: bold;
+        padding-left: 20px;
+        line-height: 73px;
+        font-family: 'Futura Md BT', sans-serif;
+    }
+
+    .enable-filter .product-item_image {
+        z-index: -1;
+    }
+
+    .collection-nav {
+        display: block;
+    }
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .collection-mb-title {
+        padding: 10px;
+        font-size: 25px;
+        margin: 0;
+        line-height: initial;
+    }
+
+    .toolbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toolbar .filter-header {
+        height: fit-content;
+        margin-right: 10px;
+    }
+}

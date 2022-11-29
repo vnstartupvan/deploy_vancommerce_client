@@ -1,0 +1,80 @@
+.product-slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.product-slider-dots {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.product-slider-dots button {
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-slider {
+    display: flex;
+    flex-direction: row;
+    transition: transform .5s ease-in-out 0s;
+}
+
+.product-slide {
+    min-width: 174px;
+    padding: 3px 15px;
+}
+
+.product-slide img {
+    border-radius: 3px;
+}
+
+.product-slide-image {
+    margin-bottom: 10px;
+}
+
+.product-slide-detail {}
+
+.product-slide-title {
+    width: 100%;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Futura Hv BT', sans-serif;
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.product-slide-price {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .product-slide {
+        min-width: 194px;
+    }
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .product-slide {
+        min-width: 186px;
+        padding: 3px;
+    }
+}
+
+/* Responsive Desktop*/
+/* @media only screen and (min-width: 821px) {
+    .product-slide {
+        width: 214px;
+    }
+} */

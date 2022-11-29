@@ -1,0 +1,32 @@
+.foundation {
+    background-image: url('https://cdn.shopify.com/s/files/1/0077/0432/files/GroupLounge_pridecollection_5.jpg?v=1648673853');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 100%;
+    height: 130px;
+    margin: 40px auto;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foundation-logo {
+    width: 140px;
+    height: 34px;
+}
+
+.foundation-title h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.foundation-description p{
+    font-size: 14px;
+    margin: 0;
+}

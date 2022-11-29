@@ -1,0 +1,105 @@
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px;
+
+    cursor: default;
+
+    background-color: #f0f4f5;
+}
+
+.footer-nav-item-wrapper {
+    width: 20%;
+}
+
+.footer-nav-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-nav-item {
+    font-size: 15px;
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 400;
+}
+
+.contact-us-btns {
+    margin-top: 10px;
+}
+
+.contact-us-btn {
+    width: 100%;
+    display: block;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px #0000001a;
+    margin-bottom: 10px;
+    min-width: 50px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -.1px;
+}
+
+.phone-contact-btn {
+    color: #000;
+    border: 2px solid #a7acad;
+    background-color: white;
+}
+.phone-contact-btn:hover {
+    background-color: #22c6e2;
+    color: #fff;
+}
+.chat-contact-btn {
+    background-color: black;
+    color: white;
+}
+
+.contact-us-hours {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+    }
+    .footer-nav-item-wrapper:first-child {
+        display: none;
+    }
+    .footer-nav-item-wrapper {
+        grid-column: span 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .footer-nav-contact-us {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+        border-bottom: 1px solid #a7acad;
+        padding: 40px 10px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .contact-us-btns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-us-btns button {
+        width: 45%;
+        font-size: 15px;
+    }
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .footer-nav-contact-us {
+        grid-column: 1 / span 4;
+    }
+} 

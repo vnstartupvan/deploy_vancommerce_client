@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assests/fonts/Roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assests/fonts/Roboto/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assests/fonts/Roboto/Roboto-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Futura Md BT', sans-serif;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+/* common */
+.active {
+    background-color: #0069d7 !important;
+    border-color: #0069d7 !important;
+    color: #fff !important;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .home-template {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding: 0!important;
+    }
+}

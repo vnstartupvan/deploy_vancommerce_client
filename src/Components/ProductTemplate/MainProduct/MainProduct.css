@@ -1,0 +1,50 @@
+.section-main-product {
+    position: relative;
+    width: 100%;
+}
+
+.main-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.leftside-product {
+    grid-column: 1 / span 3;
+    padding: 0 20px;
+}
+
+.rightside-product {
+    height: 500px;
+    position: sticky;
+    right: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 108px;
+    grid-column: 4 / span 2;
+}
+
+.rightside-product::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .main-product {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pt-product-info {
+        position: initial;
+        top: initial;
+        height: initial;
+    }
+    .slider-list {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

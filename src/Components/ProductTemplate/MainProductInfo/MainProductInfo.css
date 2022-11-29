@@ -1,0 +1,81 @@
+.pt-product-info {
+    padding: 24px;
+    padding-top: 2px;
+    margin-top: 20px;
+}
+
+.pt-product-title {
+    font-size: 20px;
+    font-family: 'Futura Hv BT', sans-serif;
+}
+
+.pt-review {
+    display: flex;
+}
+
+.pt-review-count {
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000 !important;
+    letter-spacing: -0.08px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pt-product-price {
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: bold;
+}
+
+.loan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+    color: #202020;
+
+}
+
+.loan-info {
+    margin-right: 5px;
+}
+
+.loan-dialog {
+    display: inline-block;
+    transform: translateY(2px);
+}
+
+.pt-product-actions {
+    display: flex;
+    align-items: center;
+}
+
+.pt-atc-button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #0069d7;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pt-wislist {
+    min-width: 55px;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .pt-product-info {
+        margin-top: 0;
+        padding: 10px;
+    }
+}

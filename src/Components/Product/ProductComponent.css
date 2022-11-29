@@ -1,0 +1,128 @@
+.product-item {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 24px;
+    width: calc(33.33333% - 24px);
+
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-item_image {
+    position: relative;
+}
+
+.product-item_image img {
+    width: 100%;
+}
+
+.product-item_info {}
+
+.product-title {
+    margin: 0;
+    margin-top: 20px;
+
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-price {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.product-labels {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 2;
+}
+
+.label {
+    margin-right: 5px;
+    padding: 3px;
+    border-radius: 3px;
+
+    font-weight: 600;
+    font-size: 13px;
+
+    background-color: #CF5230;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: all .15s ease-in-out;
+    visibility: hidden;
+
+    width: 100%;
+    padding: 15px;
+}
+
+.product-item_image:hover .product-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.quickview-btn {
+    width: 100%;
+    color: #fff;
+    background-color: #2f7fd0;
+
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 20px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.wishlist {
+    position: absolute;
+    top: 7px;
+    padding: 5px;
+    right: 7px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity .3s;
+    opacity: 0;
+}
+
+.product-item_image:hover .wishlist {
+    opacity: 1;
+}
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .product-item {
+        width: calc(50% - 24px);
+    }
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .label {
+        font-size: 8px;
+    }
+}

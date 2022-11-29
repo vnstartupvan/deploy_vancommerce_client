@@ -1,0 +1,33 @@
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    background-color: white;
+}
+
+.header-wrapper .section-header .header {
+    display: flex;
+    padding: 0 48px;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+}
+
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .header-wrapper .section-header .header {
+        padding: 12px 16px;
+    }
+
+    .menu {
+        display: flex;
+    }
+}

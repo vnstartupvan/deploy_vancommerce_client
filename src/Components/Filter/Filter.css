@@ -1,0 +1,223 @@
+.fitler-tree {
+    padding: 10px 24px;
+    position: sticky;
+    top: 108px;
+}
+
+.filter-content {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+}
+
+/* 
+.filter-content::-webkit-scrollbar {
+    color: blue;
+    background-color: blue;
+} */
+/* Width */
+.filter-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.filter-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #0aa3f7;
+    border-radius: 10px;
+}
+
+/* Handle */
+.filter-content::-webkit-scrollbar-thumb {
+    background: #0aa3f7;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.filter-content::-webkit-scrollbar-thumb:hover {
+    background: #2f7fd0;
+}
+
+.filter-active {
+    display: block;
+    max-height: calc(100vh - 216px);
+    overflow-y: auto;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0 20px;
+    font-family: futura-pt, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 23px;
+    cursor: default;
+}
+
+.filter-title {
+    margin: 0;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.filter-option-box {
+    padding: 15px 0;
+}
+
+.filter-option-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: futura-pt, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 23px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.filter-options {}
+
+.refine-by-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear-all-btn {
+    background-color: white;
+    cursor: pointer;
+}
+
+.refine-by-header {
+    margin-bottom: 15px;
+}
+
+.refine-by-header h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.refine-by-item {
+    display: flex;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.refine-by-item::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 14px;
+    right: 6px;
+    top: 0;
+    display: block;
+    background-color: #020202;
+    transform: rotate(45deg);
+}
+
+.refine-by-item::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 14px;
+    right: 6px;
+    top: 0;
+    display: block;
+    background-color: #020202;
+    transform: rotate(-45deg);
+}
+
+.refine-by-type {}
+
+.refine-by-value {
+    padding-left: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.filter-mb-action {
+    display: none;
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {}
+
+/* Responsive Tablet*/
+@media only screen and (max-width: 1200px) {
+    .filter-header {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        background: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .filter-title {
+        color: white;
+    }
+
+    .filter-content {
+        display: block;
+    }
+
+    .filter-active {
+        display: block;
+        visibility: visible;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 70%;
+        z-index: 9999;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .filter-active::after {
+        content: '';
+        position: fixed;
+        height: 30%;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+    }
+
+    .filter-mb-action {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        background: white;
+    }
+
+    .filter-mb-action .filter-header {
+        background: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .filter-mb-action .filter-title {
+        color: black;
+    }
+
+    .close-filter-btn {
+        background-color: white;
+        font-size: 30px;
+    }
+}

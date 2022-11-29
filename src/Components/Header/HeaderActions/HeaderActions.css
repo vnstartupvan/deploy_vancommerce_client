@@ -1,0 +1,127 @@
+.header-action-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-search-input {
+    position: relative;
+}
+
+.header-search-input input {
+    width: 100%;
+    padding: 8px 32px;
+
+    font-weight: 600;
+    color: #ccc;
+
+    border: 1px solid #202020;
+    border-radius: 50px;
+    transition: color .24s, border-color .24s;
+}
+
+.header-search-input input:focus-visible {
+    border-color: #858585;
+}
+
+.user-popup {
+    background: #fff;
+    box-shadow: 0 0 10px #0000004d;
+    border-radius: 8px;
+    padding: 20px 25px;
+
+    color: #000a14;
+    width: 100vw;
+    max-width: 340px;
+    text-align: left;
+}
+
+.user-popup-wrapper {
+    position: absolute;
+    padding-top: 12px;
+    height: auto;
+    right: -30px;
+    transition: .2s all;
+
+    background: transparent;
+    opacity: 0;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.user-icon:hover .user-popup-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.user-popup h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.user-popup p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.user-action-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-action {
+    padding: 0;
+    width: calc(50% - 5px);
+    border-radius: 50px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #d2d4d7;
+    font-weight: bold;
+}
+
+.user-action a {
+    color: #000;
+}
+
+.action-sign-in {
+    background-color: #0069d7;
+    border-color: #0069d7;
+}
+
+.action-sign-in a {
+    color: #fff;
+}
+
+
+.header-search-input .search-icon {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    line-height: 34px;
+}
+
+.cart-icon-qty {
+    position: absolute;
+    top: -7px;
+    right: 0;
+    content: "0";
+    background-color: #0069d7;
+    color: #fff;
+    width: 18px;
+    height: 19px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 600px) {
+    .header-action-wrapper {
+        align-items: flex-end;
+    }
+
+}
