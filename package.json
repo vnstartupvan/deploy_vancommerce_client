@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://vnstartupvan.github.io/deploy_vancommerce_client/",
+  "homepage": "https://deploy-vancommerce-client.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
