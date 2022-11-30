@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/deploy_vancommerce_client/static/css/main.4b384ee5.css",
-    "main.js": "/deploy_vancommerce_client/static/js/main.a072ac33.js",
+    "main.js": "/deploy_vancommerce_client/static/js/main.a60700c1.js",
     "static/js/787.c4e7f8f9.chunk.js": "/deploy_vancommerce_client/static/js/787.c4e7f8f9.chunk.js",
     "static/media/Roboto-Medium.ttf": "/deploy_vancommerce_client/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/Roboto-Regular.ttf": "/deploy_vancommerce_client/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Bold.ttf": "/deploy_vancommerce_client/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
     "index.html": "/deploy_vancommerce_client/index.html",
     "main.4b384ee5.css.map": "/deploy_vancommerce_client/static/css/main.4b384ee5.css.map",
-    "main.a072ac33.js.map": "/deploy_vancommerce_client/static/js/main.a072ac33.js.map",
+    "main.a60700c1.js.map": "/deploy_vancommerce_client/static/js/main.a60700c1.js.map",
     "787.c4e7f8f9.chunk.js.map": "/deploy_vancommerce_client/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b384ee5.css",
-    "static/js/main.a072ac33.js"
+    "static/js/main.a60700c1.js"
   ]
 }
