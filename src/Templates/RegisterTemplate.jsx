@@ -9,20 +9,16 @@ const RegisterTemplate = () => {
     const navigate = useNavigate();
     const fetchData = async (userInfo) => {
         try {
-            await axios.post('http://localhost:3001/register', userInfo);
+            const user = await axios.post('https://vancommerce.herokuapp.com/register', userInfo);
             alert('Register successfully');
-            setTimeout(() => {
-                navigate('/login')
-            }, 500);
-
+            navigate('/login')
         } catch (error) {
+            alert(`ERROR!!! ${error.response.data}`)
             console.log(error)
         }
     };
-    const onFinish = (userInfo) => {
-        console.log('Success:', userInfo);
-        fetchData(userInfo)
-
+    const onFinish = async (userInfo) => {
+        await fetchData(userInfo);
 
     };
     const onFinishFailed = (errorInfo) => {
@@ -32,11 +28,11 @@ const RegisterTemplate = () => {
         if (user) {
             navigate('/');
         }
-    },[]);
+    }, []);
     return (
-        <div style={{marginTop: '20px'}} className="section-register">
+        <div style={{ marginTop: '20px' }} className="section-register">
             <Form
-            style={{padding:'0 10px'}}
+                style={{ padding: '0 10px' }}
                 name="basic"
                 labelCol={{
                     span: 4,
@@ -126,6 +122,7 @@ const RegisterTemplate = () => {
                     name="email"
                     rules={[
                         {
+                            type: 'email',
                             required: true,
                             message: 'Please input your email!',
                         },
@@ -137,16 +134,16 @@ const RegisterTemplate = () => {
 
                 <Form.Item
                     wrapperCol={{
-                        lg:{
+                        lg: {
                             offset: 4,
                             span: 16,
                         },
-                        xs:{
-                            offset:0,
-                            span:16,
+                        xs: {
+                            offset: 0,
+                            span: 16,
                         }
                     }}
-                    style={{width:'100%', overflow:'hidden'}}
+                    style={{ width: '100%', overflow: 'hidden' }}
                 >
                     <Button type="primary" htmlType="submit">
                         Register
