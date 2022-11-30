@@ -18,10 +18,10 @@ function Cart() {
     const renderCartItems = (products) => {
         return products.map(product => {
             return <div key={product.title} className="cart-item">
-                <Link to={`/product/${utils.getProductUrl(product.title)}`} className="cart-item-wrapper">
-                    <div className="cart-item-image">
+                <div className="cart-item-wrapper">
+                    <Link to={`/product/${utils.getProductUrl(product.title)}`} className="cart-item-image">
                         <img src={product.image} alt="" />
-                    </div>
+                    </Link>
                     <div className="cart-item-info">
                         <h3 className="cart-item-title">
                             {product.title}
@@ -51,7 +51,7 @@ function Cart() {
                             </p>
                         </div>
                     </div>
-                </Link>
+                </div>
             </div>
         })
     }
