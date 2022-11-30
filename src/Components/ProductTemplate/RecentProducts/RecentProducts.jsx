@@ -9,7 +9,7 @@ import features from '../../../Features';
 
 
 
-function RecentProducts({ type }) {
+function RecentProducts() {
     const recentProducts = features.recentProduct.getProductList() || [];
     console.log(recentProducts);
     const navigate = useNavigate();

@@ -15,7 +15,7 @@ function ShoppingNav() {
     },
     {
         title: 'Holiday',
-        slug: 'Holiday',
+        slug: 'holiday',
         img: 'https://cdn.shopify.com/s/files/1/0077/0432/files/Desktop_1024X1024_BlackFridayEarlyAccess_shirts_1800x.progressive.jpg?v=1666281116'
     },
     {
