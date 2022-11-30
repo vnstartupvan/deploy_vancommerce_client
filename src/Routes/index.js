@@ -16,7 +16,7 @@ const { HomeTemplate,
     DashboardStoreCollection, } = Templates
 
 const publicRoutes = [
-    { path: '/', component: HomeTemplate },
+    { path: '/deploy_vancommerce_client', component: HomeTemplate },
     { path: '/collections/all', component: CollectionTemplate },
     { path: '/collections/:collectionId', component: CollectionDetailTemplate },
     { path: '/product/:productId', component: ProductTemplate },

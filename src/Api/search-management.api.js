@@ -5,7 +5,7 @@ export const fetchSearchData = async (param) => {
         const response = await axios({
             method:'get',
             url,
-            baseURL:'http://localhost:3001'
+            baseURL:'https://vancommerce.herokuapp.com/'
         });
         return response.data;
     } catch (error) {
