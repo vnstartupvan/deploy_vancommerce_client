@@ -16,6 +16,7 @@ import Templates from "./Templates";
 
 function App() {
   const dispatch = useDispatch();
+  utils.scrollTop();
   useEffect(() => {
     const user = utils.getLocalData('user');
     if (user) {

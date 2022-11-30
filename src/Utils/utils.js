@@ -94,6 +94,9 @@ const utils = {
     refreshPage: () => {
         window.location.reload(false);
     },
+    scrollTop: () => {
+        window.scrollTo({top:0});
+    }
 }
 
 
