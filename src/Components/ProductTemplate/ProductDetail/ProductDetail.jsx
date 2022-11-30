@@ -1,6 +1,7 @@
 import React from 'react';
 import '../ProductDetail/ProductDetail.css';
 import ProductSlider from '../ProductSlider/ProductSlider';
+import RecentProducts from '../RecentProducts/RecentProducts';
 
 function ProductDetail() {
     return (
@@ -10,11 +11,11 @@ function ProductDetail() {
             </div>
             <div className="products-recommended">
                 <h3 className="product-recommended-title">Recommend for You</h3>
-                <ProductSlider />
+                <ProductSlider/>
             </div>
             <div className="products-recent-viewed">
                 <h3 className="products-recent-viewed-title">Recently viewed</h3>
-                <ProductSlider/>
+                <RecentProducts/>
             </div>
         </div>
     )
