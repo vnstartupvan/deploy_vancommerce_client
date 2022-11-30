@@ -3,8 +3,8 @@ import '../ProductSlider/ProductSlider.css';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { useRef } from 'react';
-import { isMobile, isDesktop, isTablet } from "react-device-detect";
-import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import utils from '../../../Utils/utils';
 
 
 
@@ -744,6 +744,7 @@ function ProductSlider() {
             "__v": 0
         }
     ]
+    const navigate = useNavigate();
     const slideRef = useRef();
     const [currentSlide, setCurrentSlide] = useState(0);
     const currentIndex = useRef(0);
@@ -754,7 +755,6 @@ function ProductSlider() {
         transform: `translateX(${-currentIndex.current * slideWidth}px)`,
     })
     const bindEvent = (slideEvent) => {
-        console.log(slideRef.current.clientWidth);
         const minSlide = currentSlide === 0;
         const maxSlide = currentSlide === dummyData.length - 4;
         if (slideEvent === 'prev' && !minSlide) {
@@ -763,9 +763,13 @@ function ProductSlider() {
             setCurrentSlide(currentSlide + 1);
         }
     }
+    const itemBindEvent = (product) => {
+        navigate(`/product/${product.slug}`);
+        utils.refreshPage();
+    }
     const renderProducts = (products) => {
         return products.map((product, index) => {
-            return <div ref={slideRef} key={index} className="product-slide">
+            return <div onClick={()=> itemBindEvent(product)} ref={slideRef} key={index} className="product-slide">
                 <div className="product-slide-image">
                     <img src={product.image} alt="" />
                 </div>
