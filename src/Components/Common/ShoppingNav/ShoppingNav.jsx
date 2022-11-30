@@ -14,8 +14,8 @@ function ShoppingNav() {
         img: 'https://cdn.shopify.com/s/files/1/0077/0432/files/Desktop_1024X1024_BlackFridayEarlyAccess_Casual_1800x.progressive.jpg?v=1666280718'
     },
     {
-        title: 'Chubbies',
-        slug: 'chubbies',
+        title: 'Holiday',
+        slug: 'Holiday',
         img: 'https://cdn.shopify.com/s/files/1/0077/0432/files/Desktop_1024X1024_BlackFridayEarlyAccess_shirts_1800x.progressive.jpg?v=1666281116'
     },
     {
