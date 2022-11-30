@@ -49,7 +49,7 @@ function AdminLayout() {
         const clientDevice = utils.getClientDevice();
         if (!user && user.role !== "admin") {
             alert('Please Login with an admin account to view this page!!!')
-            navigate('/');
+            navigate('/login');
         } else {
             setAuth(true)
         }
