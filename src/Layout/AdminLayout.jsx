@@ -47,7 +47,7 @@ function AdminLayout() {
     useEffect(() => {
         console.log(user);
         const clientDevice = utils.getClientDevice();
-        if (!user && user.role !== "admin") {
+        if (!user && user?.role !== "admin") {
             alert('Please Login with an admin account to view this page!!!')
             navigate('/login');
         } else {
