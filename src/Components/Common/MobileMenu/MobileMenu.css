@@ -16,6 +16,7 @@
     background-color: white;
     height: 100vh;
     position: relative;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .mobile-menu-header {
