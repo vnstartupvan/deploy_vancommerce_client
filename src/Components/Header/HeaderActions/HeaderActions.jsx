@@ -4,12 +4,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { SearchOutlined, UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import utils from '../../../Utils/utils';
 import '../HeaderActions/HeaderActions.css';
-import { useState } from 'react';
 import { toggleCart } from '../../../Store/cartStore';
 import { actionLogout } from '../../../Store/userStore';
+import SearchInput from '../../Common/SearchInput/SearchInput';
 
 function HeaderActions() {
-    const [searchTerm, setSearchTerm] = useState(null);
     const cartList = useSelector(state => state.cart.products);
     const cartQty = utils.getCartQty(cartList);
     const navigate = useNavigate();
@@ -42,14 +41,7 @@ function HeaderActions() {
     }
     return (
         <div className='header-action-wrapper'>
-            <div className="header-search-input hide-on-mobile">
-                <form onSubmit={(e) => submitSearch(e)} action="">
-                    <input name='q' type="text" placeholder='Search...' />
-                </form>
-                <div className="search-icon">
-                    <SearchOutlined style={{ color: '#202020' }} />
-                </div>
-            </div>
+            <SearchInput searchClass={'hide-on-mobile'}/>
             <div className="user-icon pos-rel">
                 <UserOutlined style={iconStyle} />
                 <div className="user-popup-wrapper pos-abs">

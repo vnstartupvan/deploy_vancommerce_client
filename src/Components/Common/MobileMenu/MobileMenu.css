@@ -19,6 +19,11 @@
     box-shadow: 0 0 10px #ccc;
 }
 
+.mobile-search {
+    padding: 16px;
+    border-bottom: 1px solid #e6e8eb;
+}
+
 .mobile-menu-header {
     display: flex;
     flex-wrap: nowrap;
