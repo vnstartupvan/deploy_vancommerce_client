@@ -1,0 +1,41 @@
+.mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010101cc;
+    z-index: 999;
+    display: none;
+}
+.mobile-menu-wrapper.modal-menu-active {
+    display: block;
+}
+.mobile-menu {
+    width: 85%;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.mobile-menu-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #e6e8eb;
+    font-size: 16px;
+    font-family: 'Futura Hv BT', sans-serif;
+}
+
+.mobile-memu-header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-family: 'Futura Hv BT', sans-serif;
+}
+
+.mobile-menu-close-btn {
+    background-color: white;
+}

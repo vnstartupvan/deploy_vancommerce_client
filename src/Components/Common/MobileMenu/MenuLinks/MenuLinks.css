@@ -1,0 +1,25 @@
+
+.menu-link {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Futura Hv BT', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #e6e8eb;
+}
+
+.menu-link::before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.25rem;
+    width: 1.25rem;
+    background-image: url(https://cdn.shopify.com/s/files/1/0077/0432/files/chevron-right.png?v=1626056649);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

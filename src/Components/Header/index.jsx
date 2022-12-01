@@ -5,15 +5,18 @@ import '../Header/header.css'
 import PromoBar from './PromoBar/PromoBar'
 import HeaderActions from './HeaderActions/HeaderActions';
 import MenuIcon from '../../assests/icons/MenuIcon'
+import { useDispatch } from 'react-redux';
+import { actionToggleMenu } from '../../Store/mainStore';
 
 
 function Header() {
+    const dispatch = useDispatch();
     return (
         <div className='header-wrapper'>
             <PromoBar />
             <section className="section-header">
                 <header className="header">
-                    <div className="menu">
+                    <div onClick={()=> dispatch(actionToggleMenu())} className="menu">
                         <MenuIcon />
                     </div>
                     <HeaderLogo />
