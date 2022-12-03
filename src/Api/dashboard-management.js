@@ -6,7 +6,7 @@ export const fetchAllProducts = async (id) => {
         const response = await axios({
             method: 'get',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL
+            baseURL: 'https://vancommerceservces.onrender.com'
         });
         return response.data;
     } catch (error) {
@@ -20,7 +20,7 @@ export const fetchAllCollections = async (id) => {
         const response = await axios({
             method: 'get',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL
+            baseURL: 'https://vancommerceservces.onrender.com'
         });
         return response.data;
     } catch (error) {
@@ -34,7 +34,7 @@ export const patchCollection = async (collection) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             data: collection
         });
         console.log(response)
@@ -50,7 +50,7 @@ export const fetchAllUsers = async (id) => {
         const response = await axios({
             method: 'get',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL
+            baseURL: 'https://vancommerceservces.onrender.com'
         });
         return response.data;
     } catch (error) {
@@ -64,7 +64,7 @@ export const patchProduct = async (product) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             data: product
         });
         return response.data;
@@ -79,7 +79,7 @@ export const deleteProduct = async (product) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             params: {
                 product
             }
@@ -96,7 +96,7 @@ export const updatedProduct = async (product) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             data: {
                 product
             }
@@ -113,7 +113,7 @@ export const deleteUser = async (user) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             params: {
                 user
             }
@@ -131,7 +131,7 @@ export const updateUser = async (user) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: process.env.REACT_APP_BASE_URL,
+            baseURL: 'https://vancommerceservces.onrender.com',
             data: user,
         });
         return response.data;

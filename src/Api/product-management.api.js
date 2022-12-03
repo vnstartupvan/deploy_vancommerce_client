@@ -5,7 +5,7 @@ export const fetchProductData = async (id) => {
         const response = await axios({
             method:'get',
             url,
-            baseURL:process.env.REACT_APP_BASE_URL
+            baseURL:'https://vancommerceservces.onrender.com'
         });
         return response.data;
     } catch (error) {
