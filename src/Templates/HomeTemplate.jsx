@@ -2,7 +2,6 @@ import React from 'react';
 import AboutUs from '../Components/Common/AboutUs/AboutUs';
 import Banner from '../Components/Common/BannerImg/BannerImg';
 import ShoppingNav from '../Components/Common/ShoppingNav/ShoppingNav';
-import Footer from '../Components/Footer/Footer';
 
 function HomeTemplate() {
     window.scrollTo({top:0});

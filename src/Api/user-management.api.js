@@ -5,7 +5,7 @@ export const fetchUserLogin = async (user) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: 'https://vancommerce.herokuapp.com',
+            baseURL: process.env.REACT_APP_BASE_URL,
             data: user,
         });
         return response.data;
@@ -20,7 +20,7 @@ export const fetchUserRegister = async (user) => {
         const response = await axios({
             method: 'post',
             url,
-            baseURL: 'https://vancommerce.herokuapp.com',
+            baseURL: process.env.REACT_APP_BASE_URL,
             data: user,
         });
         return response.data;
