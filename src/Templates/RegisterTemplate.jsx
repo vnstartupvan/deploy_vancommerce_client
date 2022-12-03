@@ -9,7 +9,7 @@ const RegisterTemplate = () => {
     const navigate = useNavigate();
     const fetchData = async (userInfo) => {
         try {
-            const user = await axios.post('https://vancommerce.herokuapp.com/register', userInfo);
+            const user = await axios.post('https://vancommerceservces.onrender.com/register', userInfo);
             alert('Register successfully');
             navigate('/login')
         } catch (error) {

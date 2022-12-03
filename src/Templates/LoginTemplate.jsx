@@ -17,7 +17,7 @@ const LoginTemplate = () => {
     const dispatch = useDispatch();
     const fetchData = async (userInfo) => {
         try {
-            let result = await axios.post('https://vancommerce.herokuapp.com/login', userInfo);
+            let result = await axios.post('https://vancommerceservces.onrender.com/login', userInfo);
             let response = await result.data;
             console.log(response)
             dispatch(actionLogin(response));
